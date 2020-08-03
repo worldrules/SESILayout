@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 export class Contact extends Component {
   render() {
@@ -10,9 +10,7 @@ export class Contact extends Component {
               <div className="row">
                 <div className="section-title">
                   <h2>Contato</h2>
-                  <p>
-                    Utilize esse campo para encaminhar mensagens e dúvidas
-                  </p>
+                  <p>Utilize esse campo para encaminhar mensagens e dúvidas</p>
                 </div>
                 <form name="sentMessage" id="contactForm" noValidate>
                   <div className="row">
@@ -66,23 +64,23 @@ export class Contact extends Component {
                   <span>
                     <i className="fa fa-map-marker"></i> Address
                   </span>
-                  {this.props.data ? this.props.data.address : "loading"}
+                  {this.props.data ? this.props.data.address : 'loading'}
                 </p>
               </div>
               <div className="contact-item">
                 <p>
                   <span>
                     <i className="fa fa-phone"></i> Phone
-                  </span>{" "}
-                  {this.props.data ? this.props.data.phone : "loading"}
+                  </span>{' '}
+                  {this.props.data ? this.props.data.phone : 'loading'}
                 </p>
               </div>
               <div className="contact-item">
                 <p>
                   <span>
                     <i className="fa fa-envelope-o"></i> Email
-                  </span>{" "}
-                  {this.props.data ? this.props.data.email : "loading"}
+                  </span>{' '}
+                  {this.props.data ? this.props.data.email : 'loading'}
                 </p>
               </div>
             </div>
@@ -92,18 +90,18 @@ export class Contact extends Component {
                   <ul>
                     <li>
                       <a
-                        href={this.props.data ? this.props.data.facebook : "/"}
+                        href={this.props.data ? this.props.data.facebook : '/'}
                       >
                         <i className="fa fa-facebook"></i>
                       </a>
                     </li>
                     <li>
-                      <a href={this.props.data ? this.props.data.twitter : "/"}>
+                      <a href={this.props.data ? this.props.data.twitter : '/'}>
                         <i className="fa fa-twitter"></i>
                       </a>
                     </li>
                     <li>
-                      <a href={this.props.data ? this.props.data.youtube : "/"}>
+                      <a href={this.props.data ? this.props.data.youtube : '/'}>
                         <i className="fa fa-youtube"></i>
                       </a>
                     </li>
@@ -114,14 +112,14 @@ export class Contact extends Component {
           </div>
         </div>
         <div id="footer">
-          <div className="container text-center">
+          {/* <div className="container text-center">
             <p>
               &copy; 2020 Issaaf Kattan React Land Page Template. Design by{" "}
               <a href="http://www.templatewire.com" rel="nofollow">
                 TemplateWire
               </a>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     );
