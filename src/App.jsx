@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import Navigation from './components/navigation';
 import Header from './components/header';
 import Features from './components/features';
@@ -13,9 +13,9 @@ import JsonData from './data/data.json';
 export class App extends Component {
   state = {
     landingPageData: {},
-  }
+  };
   getlandingPageData() {
-    this.setState({landingPageData : JsonData})
+    this.setState({ landingPageData: JsonData });
   }
 
   componentDidMount() {
@@ -24,7 +24,7 @@ export class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <Navigation />
         <Header data={this.state.landingPageData.Header} />
         <Features data={this.state.landingPageData.Features} />
@@ -35,7 +35,7 @@ export class App extends Component {
         <Team data={this.state.landingPageData.Team} />
         <Contact data={this.state.landingPageData.Contact} />
       </div>
-    )
+    );
   }
 }
 
