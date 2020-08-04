@@ -5,9 +5,16 @@
   width: 100%;
 }
 
+#voltar {}
+
 #print {
   float: right;
 }
+
+.conteudo {
+  margin-top: 1vw;
+}
+
 
 p {
   font-size: 20px;

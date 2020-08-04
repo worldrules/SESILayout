@@ -1,5 +1,6 @@
 import React from 'react';
 import './materiaprincipal.css';
+import { Link } from 'react-router-dom';
 
 export default function MateriaPrincipal() {
   return (
@@ -10,6 +11,11 @@ export default function MateriaPrincipal() {
       <button className="btn btn-success" id="print" onClick={window.print}>
         Imprimir
       </button>
+      <Link to="/">
+        <button className="btn btn-warning" id="voltar">
+          Voltar
+        </button>
+      </Link>
 
       <div className="conteudo">
         <div id="capitulo1">
