@@ -23,7 +23,9 @@
     "Services": [{
             "icon": "fa fa-pie-chart",
             "name": "Sociologia",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
+            "path": "/materia"
+
         },
         {
             "icon": "fa fa-pie-chart",

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export class Services extends Component {
   render() {
+    //Matérias
     return (
       <div id="services" className="text-center">
         <div className="container">
@@ -17,14 +19,11 @@ export class Services extends Component {
               ? this.props.data.map((d, i) => (
                   <div key={`${d.name}-${i}`} className="col-md-4">
                     {' '}
-                    <i
-                      className={d.icon}
-                      onClick={() => {
-                        alert('oi');
-                      }}
-                    >
-                      {' '}
-                    </i>
+                    <Link to={d.path}>
+                      <i className={d.icon} onClick={() => {}}>
+                        {' '}
+                      </i>
+                    </Link>
                     <div className="service-desc">
                       <h3>{d.name}</h3>
                       <p>{d.text}</p>
